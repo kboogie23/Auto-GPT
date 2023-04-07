@@ -1,23 +1,26 @@
 {
-	"name": "Outlook Email Spam Checker",
-	"version": "1.0",
-	"description": "A Chrome extension to check for spam and remove emails from a user's Outlook mailbox",
-	"browser_action": {
-		"default_popup": "popup.html"
-	},
-	"permissions": [
-		"tabs",
-		"activeTab",
-		"storage",
-		"<all_urls>",
-		"identity",
-		"https://graph.microsoft.com/",
-		"*://*.outlook.com/*"
-	],
-	"content_scripts": [
-    	{
-       	"matches": ["*://*.outlook.com/*"],
-       	"js": ["contentScript.js"]
-    	}
-  ]
+  "manifest_version": 2,
+  "name": "Outlook Email Spam Checker",
+  "version": "1.0",
+  "description": "A Chrome extension to check for spam emails in Outlook.",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "http://*/*",
+    "https://*/*",
+    "identity"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Outlook Email Spam Checker"
+  },
+  "content_scripts": [{
+    "matches": ["https://outlook.office.com/*"],
+    "js": ["contentScript.js"]
+  }]
 }
