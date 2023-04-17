@@ -23,11 +23,11 @@ By following these guidelines, your PRs are more likely to be merged quickly aft
 
 ### PR Quality Checklist
 - [ ] My pull request is atomic and focuses on a single change.
-- [ ] I have thouroughly tested my changes with multiple different prompts.
+- [ ] I have thoroughly tested my changes with multiple different prompts.
 - [ ] I have considered potential risks and mitigations for my changes.
 - [ ] I have documented my changes clearly and comprehensively.
-- [ ] I have not snuck in any "extra" small tweaks changes <!-- Submit these as seperate Pull Reqests, they are the easiest to merge! -->
+- [ ] I have not snuck in any "extra" small tweaks changes <!-- Submit these as separate Pull Requests, they are the easiest to merge! -->
 
 <!-- If you haven't added tests, please explain why. If you have, check the appropriate box. If you've ensured your PR is atomic and well-documented, check the corresponding boxes. -->
 
-<!-- By submitting this, I agree that my pull request should be closed if I do not fill this out or follow the guide lines. -->
+<!-- By submitting this, I agree that my pull request should be closed if I do not fill this out or follow the guidelines. -->
